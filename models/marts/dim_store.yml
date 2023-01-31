@@ -1,0 +1,17 @@
+version: 2
+
+
+models:
+  - name: dim_store
+    columns:
+      - name: store_id
+      - name: staff_id
+      - name: address_id
+      - name: address1
+      - name: phone
+      - name: city_name
+      - name: country_name
+
+          
+          
+    

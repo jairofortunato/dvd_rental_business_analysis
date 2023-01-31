@@ -1,0 +1,60 @@
+version: 2
+
+
+models:
+  - name: fact_rental_payment_inventory
+    columns:
+      - name: rental_id
+        description: Rental id.
+        tests:
+              - not_null
+
+      - name: rental_date
+        description: Date of rental.
+        tests:
+              - not_null
+
+      - name: return_date
+        description: Return day of dvd.
+
+      - name: inventory_id
+        description: Inventory id.
+
+      - name: customer_id
+        description: Customer id.
+        tests:
+              - not_null
+              - relationships:
+                  to: ref('dim_customer')
+                  field: customer_id
+
+      - name: staff_id
+        description: Staff id.
+
+      - name: payment_id
+        description: Payment id
+        tests:
+              - unique
+
+      - name: amount
+        description: Amount paid.
+
+      - name: film_id
+        description: Film id.
+
+      - name: store_id
+        description: Store id.
+
+      - name: return_status
+        description: Returned early, returned on time or overdue.
+  
+
+
+
+
+
+
+
+
+
+

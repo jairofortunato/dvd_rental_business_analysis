@@ -1,0 +1,18 @@
+version: 2
+
+
+models:
+  - name: dim_date
+    columns:
+      - name: rental_id
+      - name: rental_date
+      - name: return_date
+      - name: rental_duration
+      - name: payment_date
+      - name: day_payment
+      - name: month_payment
+      - name: year_payment
+      - name: week_payment
+      - name: city_name
+      - name: country_name
+ 

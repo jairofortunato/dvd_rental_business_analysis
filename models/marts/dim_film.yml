@@ -1,0 +1,19 @@
+version: 2
+
+
+models:
+  - name: dim_film
+    columns:
+      - name: film_id
+        tests:
+              - unique
+              - not_null
+      - name: rental_duration
+      - name: rental_rate
+      - name: replacement_cost
+      - name: release_year
+      - name: language_id
+      - name: rating
+      - name: category_id
+      - name: name 
+

@@ -1,0 +1,14 @@
+version: 2
+
+
+models:
+  - name: dim_staff
+    columns:
+      - name: staff_id
+      - name: first_name
+      - name: last_name
+      - name: address_id
+      - name: email
+      - name: store_id
+      - name: active
+      - name: username

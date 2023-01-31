@@ -1,0 +1,53 @@
+version: 2
+
+sources:
+  - name: discorama_dataset
+    description: This is a replica of the Postgres database used by our app
+    tables:
+      - name: rental
+        description: Business detail about rental.
+        columns:
+          - name: rental_id
+            description: Primary key of the orders table
+            tests:
+              - unique
+              - not_null
+
+      - name: payment
+        description: info
+
+      - name: customer
+        description: info
+
+      - name: inventory
+        description: info
+
+      - name: actor
+        description: info
+
+      - name: address
+        description: info
+
+      - name: category
+        description: info
+
+      - name: city
+        description: info
+
+      - name: country
+        description: info
+
+      - name: film
+        description: info
+
+      - name: film_actor
+        description: info
+
+      - name: film_category
+        description: info
+
+      - name: staff
+        description: info
+
+      - name: store
+        description: info
